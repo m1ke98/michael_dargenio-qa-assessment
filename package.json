@@ -17,6 +17,12 @@
   },
   "homepage": "https://github.com/m1ke98/michael_dargenio-qa-assessment#readme",
   "devDependencies": {
+    "@nomiclabs/hardhat-ethers": "^2.2.3",
+    "ethers": "^5.7.2",
     "hardhat": "^2.14.0"
+  },
+  "dependencies": {
+    "chai": "^4.3.7",
+    "dotenv": "^16.0.3"
   }
 }
