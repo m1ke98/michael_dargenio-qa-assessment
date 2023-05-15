@@ -22,6 +22,7 @@
     "hardhat": "^2.14.0"
   },
   "dependencies": {
+    "@nomiclabs/hardhat-waffle": "^2.0.5",
     "chai": "^4.3.7",
     "dotenv": "^16.0.3"
   }

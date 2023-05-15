@@ -23,6 +23,10 @@ contract GetterSetter {
     setBytes32(_value);
   }
 
+  function retrieveBytes32() public view returns (bytes32) {
+    return getBytes32;
+  }
+
   function setBytes(bytes memory _value) public {
     getBytes = _value; 
     emit SetBytes(msg.sender, _value);
@@ -33,6 +37,9 @@ contract GetterSetter {
     setBytes(_value);
   }
 
+  function retrieveBytes() public view returns (bytes memory) {
+    return getBytes;
+  }
 
   function setUint256(uint256 _value) public {
     getUint256 = _value;
@@ -42,5 +49,9 @@ contract GetterSetter {
   function requestedUint256(bytes32 _requestId, uint256 _value) public {
     requestId = _requestId;
     setUint256(_value);
+  }
+
+  function retrieveUint256() public view returns (uint256) {
+    return getUint256;
   }
 }
